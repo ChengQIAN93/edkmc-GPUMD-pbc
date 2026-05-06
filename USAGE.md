@@ -12,11 +12,6 @@ For MatPL, use the official online installation guide:
 
 After installation, make sure one of the following imports works in your Python environment:
 
-```python
-from src.ase.calculate import MatPL
-```
-
-or
 
 ```python
 from src.ase.calculate import MatPL_calculator
