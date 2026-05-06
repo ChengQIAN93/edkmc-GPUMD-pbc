@@ -72,7 +72,7 @@ model_file = nep13B.txt
 carbon_group = 1
 constrain_group = 0
 metal_group = 2
-metal_elements = Cu
+metal_elements = Cu  # metal_elements = Cu Zn or metal_elements = Cu,Zn
 
 cc_cutoff = 1.7
 c_metal_cutoff = 4.5
