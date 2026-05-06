@@ -13,16 +13,8 @@ Official installation guide:
 After installation, check that one of these imports works:
 
 ```python
-from src.ase.calculate import MatPL
-```
-
-or
-
-```python
 from src.ase.calculate import MatPL_calculator
 ```
-
-This codebase will try `MatPL` first and then fall back to `MatPL_calculator`.
 
 ### 1.2 calorine
 
@@ -41,13 +33,6 @@ The calorine docs also show the CPU calculator as:
 ```python
 from calorine.calculators import CPUNEP
 calc = CPUNEP("nep.txt")
-```
-
-and the GPU calculator as:
-
-```python
-from calorine.calculators import GPUNEP
-calc = GPUNEP("nep.txt")
 ```
 
 ### 1.3 Which backend to install
