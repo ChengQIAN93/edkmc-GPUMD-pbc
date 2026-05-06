@@ -1,0 +1,52 @@
+# edkmc.in - Parameter file for Monte Carlo bond-rotation simulation
+
+# Calculator backend:
+#   matpl   - GPU MatPL calculator
+#   cpunep  - CPU calorine CPUNEP calculator
+calculator = matpl
+
+# Model / potential file used by the calculator.
+# For MatPL this can be a checkpoint or NEP file.
+model_file = nep13B.txt
+
+# Atom groups:
+#   carbon_group    - carbon atoms considered in the MC bond-rotation logic
+#   constrain_group - atoms fixed during structure optimization
+#   metal_group     - fallback metal group if metal_elements is not set
+carbon_group = 1
+constrain_group = 0
+metal_group = 2
+
+# Metal recognition by element symbols.
+# This is preferred over metal_group when provided.
+# Examples:
+#   metal_elements = Cu
+#   metal_elements = Cu Zn
+#   metal_elements = Cu,Zn
+metal_elements = Cu
+
+# Active-site determination:
+#   cc_cutoff       - C-C neighbor cutoff in Angstrom
+#   c_metal_cutoff  - C-metal neighbor cutoff in Angstrom
+#   coord_threshold - minimum C-C coordination number for an active carbon
+cc_cutoff = 1.7
+c_metal_cutoff = 4.5
+coord_threshold = 2
+
+# Geometry optimization:
+#   fmax - force convergence criterion in eV/Angstrom
+fmax = 0.05
+
+# Monte Carlo settings:
+#   input_structure - input structure file
+#   rotate_max      - maximum number of MC trial rotations
+#   temperature     - temperature in K
+#   early_stop      - stop after the first accepted move if True
+input_structure = restart.xyz
+rotate_max = 30
+temperature = 1400.0
+early_stop = False
+
+# Output files
+optimized_file = optimized.xyz
+final_structure = model.xyz
