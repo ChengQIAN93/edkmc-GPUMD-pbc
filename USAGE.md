@@ -21,16 +21,12 @@ This codebase will first try `MatPL`, and then fall back to `MatPL_calculator` i
 
 ### 1.2 Install calorine
 
+-  calorine installation guide: `https://calorine.materialsmodeling.org/get_started/calculators.html`
+
 According to the official calorine installation documentation, the stable version can be installed from PyPI with:
 
 ```bash
 pip install calorine --user
-```
-
-The official documentation also notes that the PyPI package is distributed as source, so installation requires a C++11-compatible compiler such as GCC 4.8.1+ or Clang 3.3+. If the PyPI install fails, or if you need the latest development version, the official fallback command is:
-
-```bash
-pip install --user git+https://gitlab.com/materials-modeling/calorine.git
 ```
 
 For calculator usage, the calorine documentation shows the CPU calculator as:
@@ -38,13 +34,6 @@ For calculator usage, the calorine documentation shows the CPU calculator as:
 ```python
 from calorine.calculators import CPUNEP
 calc = CPUNEP("nep.txt")
-```
-
-and the GPU calculator as:
-
-```python
-from calorine.calculators import GPUNEP
-calc = GPUNEP("nep.txt")
 ```
 
 ### 1.3 Which backend should you install?
