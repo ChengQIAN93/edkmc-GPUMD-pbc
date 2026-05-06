@@ -1,0 +1,13 @@
+Monte Carlo Rotation Simulation Summary
+==================================================
+Total MC steps: 30
+Final energy: -2120.262504 eV
+Temperature: 1400.0 K
+Early stop: False
+
+Statistics:
+Total attempts: 30
+Accepted (lower energy): 0
+Accepted (Metropolis): 30
+Rejected: 0
+Overall acceptance rate: 100.00%
